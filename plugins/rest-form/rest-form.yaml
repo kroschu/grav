@@ -1,0 +1,4 @@
+enabled: true
+#route: /dynamic
+rest_server: http://localhost:8080/restsql
+text_var: Custom Text added by the **Grav Rest Contents** plugin (disable plugin to remove)
