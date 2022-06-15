@@ -2,7 +2,7 @@
 title: 'Технологічна операція (ТО)'
 ---
 
-![](https://chart.googleapis.com/chart?chs=180x180&amp;cht=qr&amp;chl=https://books.m-e.pp.ua/tekhnologichna-operaciya-to.html)
+![](https://chart.googleapis.com/chart?chs=120x120&amp;cht=qr&amp;chl=https://books.m-e.pp.ua/tekhnologichna-operaciya-to.html)
 
 Окрема частина технологічного процесу, сукупність робочих дій (прийомів), що характеризується однорідністю технологічного змісту і єдністю предмету праці, застосовуваного інструмента (устаткування) і робочих пристосувань. Виконується на одному робочому місці.
 На підприємстві виконується велика кількість ТО.
