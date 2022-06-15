@@ -2,6 +2,15 @@
 title: 'Вимоги до проекту'
 ---
 
+[modal name="qr-kod-of-the-page"]
+
+![](https://chart.googleapis.com/chart?chs=440x440&amp;cht=qr&amp;chl=https://books.m-e.pp.ua/vimogi-do-proektu) 
+
+[/modal]
+
+###### [modal-launch modal="qr-kod-of-the-page"] **QR-код сторінки** [/modal-launch]
+
+###### [modal-launch modal="qr-kod-of-the-page"] **QR-код сторінки** [/modal-launch]
 Cередовище спільної розробки, як правило, повинно забезпечувати наступні можливості:
 
 * дружній інтерфейс користувача, який будь-хто може використовувати з обмеженим навчанням або без навчання
