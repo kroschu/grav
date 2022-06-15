@@ -4,7 +4,7 @@ title: Введення
 
 [modal name="qr-kod-of-the-page"]
 
-![](https://chart.googleapis.com/chart?chs=440x440&amp;cht=qr&amp;chl=https://books.m-e.pp.ua.html) 
+![](https://chart.googleapis.com/chart?chs=440x440&amp;cht=qr&amp;chl=https://books.m-e.pp.ua) 
 
 [/modal]
 
