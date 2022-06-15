@@ -2,7 +2,6 @@
 title: 'Технологічна операція (ТО)'
 ---
 
- 
 [modal name="qr-kod-of-the-page"]
 
 ![](https://chart.googleapis.com/chart?chs=300x300&amp;cht=qr&amp;chl=https://books.m-e.pp.ua/tekhnologichna-operaciya-to.html) 
