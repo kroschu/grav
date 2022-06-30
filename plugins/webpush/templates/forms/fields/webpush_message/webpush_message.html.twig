@@ -1,0 +1,12 @@
+{% extends "forms/field.html.twig" %}
+
+{% block input %}
+    <div class="{{ form_field_wrapper_classes ?: 'form-textarea-wrapper' }} {{ field.size }} {{ field.wrapper_classes }}">
+            {% if value %}{% set webpush_value = value|trim|e('html') %}
+            {% else %}{% set webpush_value = admin.page.content %}
+            {% endif %}
+            <textarea name="{{ (scope ~ field.name)|fieldName }}">{{ webpush_value }}</textarea>
+    </div>
+    <input type="hidden" name="data[header][webpushurl]" value="{{ admin.page.url(true) }}">
+{% endblock %}
+

@@ -1,0 +1,30 @@
+form:
+  fields:
+    tabs:
+      type: tabs
+      active: 1
+      fields:
+        webpushfields:
+          type: tab
+          title: Web Push 
+          fields:
+            header.webpushtitle:
+              type: webpush_title
+              label: Notification Title
+              size: medium
+            header.webpushmessage:
+              type: webpush_message
+              size: large
+              label: Notification Message
+            header.webpushimage:
+              type: mediapicker
+              folder: 'self@'
+              size: large
+              label: Thumbnail
+              preview_images: true
+            header.webpushbutton:
+              type: checkboxes
+              label: Notification ready ?
+              options:
+                send: Send Notification
+              use: keys
