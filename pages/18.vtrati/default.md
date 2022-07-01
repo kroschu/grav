@@ -4,7 +4,7 @@ webpushtitle: Vtrati
 webpushurl: 'https://books.m-e.pp.ua/vtrati'
 webpushbutton:
     send: false
-webpushmessage: "&amp;lt;div  class=&amp;quot;&amp;quot;&amp;gt;\n  &amp;lt;iframe src=&amp;quot;https://app.m-e.pp.ua/tickets&amp;quot; width=&amp;quot;640&amp;quot; height=&amp;quot;480&amp;quot;&amp;gt;&amp;lt;/iframe&amp;gt;\n&amp;lt;/div&amp;gt;"
+webpushmessage: "&amp;amp;lt;div  class=&amp;amp;quot;&amp;amp;quot;&amp;amp;gt;\n  &amp;amp;lt;iframe src=&amp;amp;quot;https://app.m-e.pp.ua/tickets&amp;amp;quot; width=&amp;amp;quot;640&amp;amp;quot; height=&amp;amp;quot;480&amp;amp;quot;&amp;amp;gt;&amp;amp;lt;/iframe&amp;amp;gt;\n&amp;amp;lt;/div&amp;amp;gt;"
 ---
 
-[iframe url="https://app.m-e.pp.ua/tickets" class="external iframe" width="100%" height="900"/]
+[iframe url="https://app.m-e.pp.ua/tickets" class="external iframe" width="100%" height="1200"/]
