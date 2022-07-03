@@ -4,11 +4,12 @@ webpushtitle: Zamovlennya-na-litogin
 webpushurl: 'https://books.m-e.pp.ua/zamovlennya-na-litogin'
 webpushbutton:
     send: false
-webpushmessage: "<p><div class=\"browser-wrapper\">\n    <div class=\"browser-frame\">\n        <div class=\"btoolbar\">\n            <span class=\"btoolbar-button button-1\"></span>\n            <span class=\"btoolbar-button button-2\"></span>\n            <span class=\"btoolbar-button button-3\"></span>\n            <div class=\"btoolbar-address\"><i class=\"fa fa-repeat\"></i><em>http://htm.m-e.pp.ua/inter/</em></div>\n            <span class=\"btoolbar-action\"><i class=\"fa fa-bars\"></i></span>\n        </div>\n        <div class=\"bbody \"></div>\n    </div>\n</div>[/browser]</p>\n\n<div  class=\"external iframe\">\n  <iframe src=\"https://polina.m-e.pp.ua/\" width=\"100%\" height=\"1200\"></iframe>\n</div>\n\n<h5><strong><div class=\"sc-notice info\">\n  <div><div style=\"text-align: center;\"><a href=\"https://polina.m-e.pp.ua/\">Тапай тут щоб відкрити поліну в окремому вікні з можливістю діалогу голосом. Далі тисни на мікрофон та проговори питання!</a></div></div>\n</div></strong></h5>"
+webpushmessage: "&lt;p&gt;&lt;div class=&quot;browser-wrapper&quot;&gt;\n    &lt;div class=&quot;browser-frame&quot;&gt;\n        &lt;div class=&quot;btoolbar&quot;&gt;\n            &lt;span class=&quot;btoolbar-button button-1&quot;&gt;&lt;/span&gt;\n            &lt;span class=&quot;btoolbar-button button-2&quot;&gt;&lt;/span&gt;\n            &lt;span class=&quot;btoolbar-button button-3&quot;&gt;&lt;/span&gt;\n            &lt;div class=&quot;btoolbar-address&quot;&gt;&lt;i class=&quot;fa fa-repeat&quot;&gt;&lt;/i&gt;&lt;em&gt;http://htm.m-e.pp.ua/inter/&lt;/em&gt;&lt;/div&gt;\n            &lt;span class=&quot;btoolbar-action&quot;&gt;&lt;i class=&quot;fa fa-bars&quot;&gt;&lt;/i&gt;&lt;/span&gt;\n        &lt;/div&gt;\n        &lt;div class=&quot;bbody &quot;&gt;&lt;/div&gt;\n    &lt;/div&gt;\n&lt;/div&gt;[/browser]&lt;/p&gt;\n\n&lt;div  class=&quot;external iframe&quot;&gt;\n  &lt;iframe src=&quot;https://polina.m-e.pp.ua/&quot; width=&quot;100%&quot; height=&quot;1200&quot;&gt;&lt;/iframe&gt;\n&lt;/div&gt;\n\n&lt;h5&gt;&lt;strong&gt;&lt;div class=&quot;sc-notice info&quot;&gt;\n  &lt;div&gt;&lt;div style=&quot;text-align: center;&quot;&gt;&lt;a href=&quot;https://polina.m-e.pp.ua/&quot;&gt;Тапай тут щоб відкрити поліну в окремому вікні з можливістю діалогу голосом. Далі тисни на мікрофон та проговори питання!&lt;/a&gt;&lt;/div&gt;&lt;/div&gt;\n&lt;/div&gt;&lt;/strong&gt;&lt;/h5&gt;"
 ---
 
-[ui-browser address="http://htm.m-e.pp.ua/"]inter[/browser]
+[ui-accordion independent=true open=none][ui-accordion-item title="Section 1"]
 
-
-[iframe url="https://polina.m-e.pp.ua/" class="external iframe" width="100%" height="1200"/]
+[iframe url="http://htm.m-e.pp.ua/inter/" class="external iframe" width="100%" height="400"/]
 ##### **[notice][center][Тапай тут щоб відкрити поліну в окремому вікні з можливістю діалогу голосом. Далі тисни на мікрофон та проговори питання!](https://polina.m-e.pp.ua/)[/center][/notice]**
+
+[/ui-accordion-item][/ui-accordion]
