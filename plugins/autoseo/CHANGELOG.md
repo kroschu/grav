@@ -1,3 +1,11 @@
+# v1.4.0
+## 04/08/2022
+
+1. []()
+    * takeover release
+2. [](#bugfix)
+    * do not crash on mbregex search failure in php_mbereg_replace_exec.
+
 # v1.3.5
 ## 01/26/2018
 
@@ -15,7 +23,7 @@
 
 1. [](#bugfix)
     * The meta tag fields were wrongly named "property" instead of "name".
-    
+
 # v1.3.1
 ## 08/03/2017
 

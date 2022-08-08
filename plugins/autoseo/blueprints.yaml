@@ -1,15 +1,15 @@
 name: Auto SEO
-version: 1.3.5
+version: 1.4.0
 description: Grav AutoSEO is a plugin for Grav with which you can fill automatically the description and keywords metadata of a page using its content. It also adds Facebook Open Graph metadata and Twitter Cards Meta Tags.
 icon: magic
 author:
-  name: Laurent ongaro
-  email: laurent@steamlead.com
-  url: http://www.steamlead.com
-homepage: https://github.com/steamlead/grav-plugin-autoseo
+  name: Nuno Costa
+  email: info@codehaha.com
+  url: http://www.codehaha.com
+homepage: https://github.com/francodacosta/grav-plugin-autoseo
 keywords: plugin, seo, metadata extraction, auto fill
-bugs: https://github.com/steamlead/grav-plugin-autoseo/issues
-docs: https://github.com/steamlead/grav-plugin-autoseo/blob/master/README.md
+bugs: https://github.com/francodacosta/grav-plugin-autoseo/issues
+docs: https://github.com/francodacosta/grav-plugin-autoseo/blob/master/README.md
 license: MIT
 dependencies:
     - { name: admin, version: '>=1.5.0' }

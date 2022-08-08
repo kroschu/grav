@@ -24,7 +24,7 @@ class AutoSeoPlugin extends Plugin
      */
     public function onPluginsInitialized()
     {
-        // deactivate plugin in admin 
+        // deactivate plugin in admin
          if (    !$this->isAdmin()
             and $this->config->get('plugins.autoseo.enabled')
         ) {
@@ -53,7 +53,7 @@ class AutoSeoPlugin extends Plugin
         $meta = $page->metadata();
 
         $metaSite = $this->config->get('site')['metadata'];
-        
+
         // limit the content size to reduce the performance impact
         $content = mb_substr(strip_tags($page->content()),0, 1000 );
 
@@ -66,7 +66,7 @@ class AutoSeoPlugin extends Plugin
         if ($updateTwitter) $meta = $this->getMetaTwitter ($meta, $metaSite, $config, $cleanContent, $cleanTitle);
         $page->metadata ($meta);
     }
-    
+
     // PROCESS for the description metadata
     private function getMetaDescription ($meta, $metaSite, $config, $cleanContent) {
 
@@ -81,7 +81,7 @@ class AutoSeoPlugin extends Plugin
         $meta['description'] = [ 'name' => 'description', 'content' => $metaPageContent];
         return $meta;
     }
-    
+
     // PROCESS for the keywords metadata
     private function getMetaKeywords ($meta, $metaSite, $config) {
         $page = $this->grav['page'];
@@ -91,7 +91,7 @@ class AutoSeoPlugin extends Plugin
         // if the page has a meta that is different from the default one, we return its value
         if (!empty($meta['keywords']['content']) && $meta['keywords']['content'] != $metaSiteContent) return $meta;
         $length = $config['keywords.length'];
-        if ($length <=1 ) $length=20; 
+        if ($length <=1 ) $length=20;
 
         // we create a keywords list using the page tags and categories
         if (array_key_exists( 'category', $page->taxonomy() )) { $categories = $page->taxonomy()['category']; } else { $categories = []; }
@@ -111,7 +111,7 @@ class AutoSeoPlugin extends Plugin
 
     // PROCESS for the OpenGraph metadata
     private function getMetaOpenGraph ($meta, $metaSite, $config, $cleanContent, $cleanTitle) {
-        $page = $this->grav['page'];        
+        $page = $this->grav['page'];
 
         $meta['og:sitename']['name']        = 'og:sitename';
         $meta['og:sitename']['property']    = 'og:sitename';
@@ -133,7 +133,7 @@ class AutoSeoPlugin extends Plugin
             if ($meta['description']['content'] != $metaSiteContent) $cleanContent = $meta['description']['content'];
         }
 
-        $meta['og:description']['content']  = $cleanContent; 
+        $meta['og:description']['content']  = $cleanContent;
 
         if (!empty($page->value('media.image'))) {
             $images = $page->media()->images();
@@ -144,10 +144,10 @@ class AutoSeoPlugin extends Plugin
         }
         return $meta;
     }
-    
+
     // PROCESS for the twitter metadata
     private function getMetaTwitter ($meta, $metaSite, $config, $cleanContent, $cleanTitle) {
-        $page = $this->grav['page'];   
+        $page = $this->grav['page'];
 
         if (!isset($meta['twitter:card'])) {
             $meta['twitter:card']['name']      = 'twitter:card';
@@ -164,13 +164,13 @@ class AutoSeoPlugin extends Plugin
         if (!isset($meta['twitter:description'])) {
             $meta['twitter:description']['name']     = 'twitter:description';
             $meta['twitter:description']['property'] = 'twitter:description';
-            if (empty($cleanContent)) 
+            if (empty($cleanContent))
                 $cleanContent = $meta['description']['content'];
             else {
                 if (array_key_exists('description', $metaSite)) { $metaSiteContent =  htmlspecialchars($metaSite['description'], ENT_QUOTES, 'UTF-8'); } else { $metaSiteContent = ''; }
                 if ($meta['description']['content'] != $metaSiteContent) $cleanContent = $meta['description']['content'];
             }
-            $meta['twitter:description']['content']  = mb_substr($cleanContent,0,140); 
+            $meta['twitter:description']['content']  = mb_substr($cleanContent,0,140);
         }
 
         if (!isset($meta['twitter:image'])) {
@@ -217,15 +217,22 @@ class AutoSeoPlugin extends Plugin
     }
 
     private function cleanText ($content, $config) {
-        $length = $config['description.length'];       
-        if ($length <=1 ) $length=20; 
- 
-        $content = $this->cleanMarkdown($content);
-        // truncate the content to the number of words set in config
-        $contentSmall = mb_ereg_replace('((\w+\W*){'.$length.'}(\w+))(.*)', '${1}', $content); // beware if content is less than length words, it will be nulled    
-        if ($contentSmall == '' ) $contentSmall = $content;
- 
-        return $contentSmall;
+        try {
+
+            $length = $config['description.length'];
+            if ($length <=1 ) $length=20;
+
+            $content = $this->cleanMarkdown($content);
+            // truncate the content to the number of words set in config
+            $contentSmall = mb_ereg_replace('((\w+\W*){'.$length.'}(\w+))(.*)', '\\1', $content); // beware if content is less than length words, it will be nulled
+            if ($contentSmall == '' ) $contentSmall = $content;
+
+            return $contentSmall;
+        } catch (\Throwable $e) {
+            $this->grav['log']->addError($e->getMessage());
+
+            return $content;
+        }
     }
 
     private function cleanString ($content) {
