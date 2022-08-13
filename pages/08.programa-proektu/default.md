@@ -7,20 +7,21 @@ webpushbutton:
     send: false
 ---
 
-
 <script>
-  window.$docsify = {
-    cusdis: {
-      host: 'https://cusdis.m-e.pp.ua', // change the host if you are using self-hosted Cusdis
-      appId: '8fdd9996-0411-4043-b246-bf2f38c29392',
-    },
-  }
+    window.intergramId = 5123414020;
+    window.intergramServer = "https://to03.m-e.pp.ua/";
+     window.intergramCustomizations = {
+        mainColor: "#ff0000",
+        titleClosed: 'Листогин №1',
+        titleOpen: 'Повідомлення оператору Листoгин #1',
+        introMessage: 'Напишіть що та в якій кількості Вам потрібно',
+        autoResponse: 'Повідомлення в обробці...',
+        autoNoResponse: 'Оператор отримав замовлення ' + 'але ще не прочитав',
+        alwaysUseFloatingButton: true // Use the mobile floating button also on large screens
+    };
 </script>
-<script src="//cdn.jsdelivr.net/npm/docsify@4"></script>
-<script src="https://cusdis.m-e.pp.ua/js/cusdis.es.js"></script> 
+<script src="https://to03.m-e.pp.ua/js/widget.js"></script>
 
-
-<script async defer src="https://cusdis.m-e.pp.ua/js/cusdis.es.js"></script>
 ## **Програма проекту**
 
 Розвиток проекту ТребаТак включає в себе наступні кроки:
