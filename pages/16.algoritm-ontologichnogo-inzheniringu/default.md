@@ -1,8 +1,15 @@
 ---
-title: 'Алгоритм онтологічного інженірінгу'
+title: Алгоритм онтологічного інженірінгу
 ---
 
 
+[modal name="qr-kod-of-the-page"]
+
+![](https://chart.googleapis.com/chart?chs=440x440&amp;cht=qr&amp;chl=https://webm.m-e.pp.ua/algoritm-ontologichnogo-inzheniringu/) 
+
+[/modal]
+
+###### [modal-launch modal="qr-kod-of-the-page"] **QR-код сторінки** [/modal-launch]
 
 1. виділення концептів - базових понять даної предметної області;
 
