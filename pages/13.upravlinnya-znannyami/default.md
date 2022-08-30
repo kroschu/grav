@@ -1,6 +1,15 @@
 ---
-title: 'Управління знаннями'
+title: Управління знаннями
 ---
+
+
+[modal name="qr-kod-of-the-page"]
+
+![](https://chart.googleapis.com/chart?chs=440x440&amp;cht=qr&amp;chl=https://webm.m-e.pp.ua/upravlinnya-znannyami/) 
+
+[/modal]
+
+###### [modal-launch modal="qr-kod-of-the-page"] **QR-код сторінки** [/modal-launch]
 
 **- Це сукупність процесів, які керують створенням, поширенням, обробкою і використанням інформації всередині підприємства.**
 
