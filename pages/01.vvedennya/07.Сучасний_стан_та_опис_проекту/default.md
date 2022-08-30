@@ -1,7 +1,14 @@
 ---
-title: 'Сучасний стан та опис проекту'
-body_classes: 'title-center title-h1h2'
+title: Сучасний стан та опис проекту
 ---
+
+[modal name="qr-kod-of-the-page"]
+
+![](https://chart.googleapis.com/chart?chs=440x440&amp;cht=qr&amp;chl=https://webm.m-e.pp.ua/ontologiya-znan/) 
+
+[/modal]
+
+###### [modal-launch modal="qr-kod-of-the-page"] **QR-код сторінки** [/modal-launch]
 
 > «Ті компанії, які не усвідомлюють, що знання є засобом виробництва більш важливим, ніж земля, праця або капітал, поступово загинуть і ніколи не зрозуміють, що їх загубило» Ларі Прусак (1)
 
